@@ -1,0 +1,199 @@
+*body{
+    margin:0;
+    padding:0 0 0 0;
+}
+.login_page{
+    padding:34px;
+}
+.twitter_logo{
+    font-size:42px;
+    color:rgb(29, 155, 240)
+}
+
+.heading1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-stretch: 100%;
+    margin:60px 0px 40px 0px;
+    
+}
+.heading2{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom:25px;
+}
+.button{
+    width:300px;
+    height: 40px;
+    border:1px solid rgba(165, 158, 158,0.5);
+    border-radius:30px;
+    background-color: white;
+    line-height: 40px;
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.google{
+    padding:4px;
+}
+#google_icon{
+    padding-top:10px;
+    padding-right:5px;
+    height: 20px;
+}
+
+.apple{
+    padding:4px;
+}
+.apple_logo{
+    font-size:25px;
+    padding-right:5px;
+}
+.partition{
+    width:300px;
+    text-align: center;
+    margin:4px;
+    padding:2px;
+    font-family: sans-serif;
+}
+.phone_or_email_button{
+    background-color:rgb(29, 155, 240);
+    color:white;
+    font-size: 15px;
+    font-weight:500;
+}
+.terms_and_condition{
+    font-size:10px;
+    color:grey;
+    font-family: sans-serif;
+    font-weight: 300;
+    width:300px;
+    padding-top:5px;
+}
+.terms_and_condition a{
+    font-family:'Roboto', sans-serif ;
+    text-decoration: none;
+    letter-spacing: 0.01cm;
+    color:rgb(29, 155, 240);
+}
+.heading3{
+    margin-top:10px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.sign_in{
+    margin-top:45px;
+}
+
+ /* banner image */
+
+.banner_image img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    object-position: center;
+}
+.sign_in_button{
+    color:rgb(29, 155, 240);
+    font-weight: 800;
+}
+/* footer */
+
+.footer{
+    margin:10px 20px 0px 20px;
+    display:flex;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-shrink: inherit;
+}
+.footer span a{
+    font-family: sans-serif;
+    font-size:13px;
+    text-decoration: none;
+    color:rgb(83, 100, 113);
+    padding:0 7px;
+}
+.copyright{
+    padding:2px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:13px;
+    text-decoration: none;
+    color:rgb(83, 100, 113);
+}
+/* hover */
+.google button:hover{
+    background-color: rgba(29, 155, 240,0.1);
+    transition-duration:0.2s;  
+}
+.apple button:hover{
+    transition-duration: 0.2s;
+    background-color:rgba(212, 209, 209,0.5);
+}
+
+.sign_in_button:hover{
+    background-color: rgba(29, 155, 240,0.2);
+    transition-duration:0.2s;
+}
+.footer span a:hover{
+    text-decoration: underline;
+}
+.terms_and_condition a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width:500px) {
+    .heading1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 35px;
+        font-stretch: 100%;
+        margin:50px 0px 40px 0px;
+        
+    } 
+}
+@media screen and (min-width:1000px)
+{
+    *{
+        padding:0;
+        margin:0;
+    }
+    .content_page{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    .banner_image{
+        order:1;
+        height:91vh;
+        /* width:54%; */
+        flex-shrink: 2;
+    }
+    .banner_image img{
+        display:block;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .login_page{
+        order:2;
+        padding:36px;
+        /* width:44%; */
+        flex-shrink: 0;
+        /* height:91vh; */
+    }
+    .heading3{
+        padding-top:10px;
+    }
+    
+    .sign_in_button{
+        margin-top:20px;
+    }
+}
